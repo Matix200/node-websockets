@@ -20,7 +20,7 @@ wss.on('connection', (ws) => {
   ws.on('close', () => console.log('Client disconnected'));
 });
 
-var Crypto = "Suka blat";
+var Crypto = "";
 setTimeout(function() {
 coinTicker('bitfinex',['BTC_USD','ETH_USD'])
    .then((tick) => {
